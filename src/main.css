@@ -1,0 +1,26 @@
+body { margin: 0; padding: 0; }
+canvas { display: block; }
+
+.menu { position: fixed; margin: 1%; width: 98%; }
+.menu-item-top-right { background-color: #f0ce00; border-radius: 5px; display: inline-block; float: right; margin: 5px; padding: 10px; }
+.menu-item-top-left { display: inline-block; float: left; margin: 5px; }
+
+#solaris .item::before { content: "S"; }
+#solaris .item:hover::before { content: "Solaris"; }
+#olmeque .item::before { content: "M"; }
+#olmeque .item:hover::before { content: "Machine des Olmèques"; }
+#thallios .item::before { content: "T"; }
+#thallios .item:hover::before { content: "Thallios"; }
+#condor .item::before { content: "C"; }
+#condor .item:hover::before { content: "Condor"; }
+
+
+img {
+	height: 50px;
+	width: auto;
+	margin: 5px;
+}
+
+span {
+	color: white;
+}
