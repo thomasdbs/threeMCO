@@ -4,7 +4,8 @@
 	"description": "Mysterious cities of gold pictures in 3D",
 	"scripts": {
 		"start": "webpack-dev-server --progress --colors",
-		"build": "webpack --progress --colors"
+		"build": "webpack --progress --colors",
+		"deploy": "git subtree push --prefix dist origin gh-pages"
 	},
 	"repository": {
 		"type": "git",

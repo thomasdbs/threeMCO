@@ -7,7 +7,7 @@ import fragmentShader from './shaders/fragment.glsl';
 
 let sessionCheck = sessionStorage.getItem('picture');
 let session = null
-if (sessionCheck == null) { sessionStorage.setItem('picture', 'src/img/logo_mco1.png'); session = sessionStorage.getItem('picture'); }
+if (sessionCheck == null) { sessionStorage.setItem('picture', 'img/logo_mco1.png'); session = sessionStorage.getItem('picture'); }
 else { session = sessionCheck; }
 
 let animation = true;
@@ -23,7 +23,7 @@ document.querySelector("#olmeque").onclick = () => { updatePicture('03.jpg'); }
 
 const updatePicture = pictureName => {
 	sessionStorage.clear();
-	sessionStorage.setItem('picture', `src/img/${pictureName}`);
+	sessionStorage.setItem('picture', `img/${pictureName}`);
 	animation = true;
 	window.location.reload();
 }
