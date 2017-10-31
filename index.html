@@ -1,39 +1,47 @@
 <!DOCTYPE html>
 <html>
-	<head>
-		<meta charset="utf-8">
-		<title>Particles</title>
-	</head>
-	<body>
-		<div class="menu">
-			<div class="menu-item-top-left">
-				<img id="logo" src="img/logo_mco1.png" alt="">
-			</div>
-			<div class="menu-item-top-left">
-				<img id="esteban" src="img/esteban_3.png" alt="">
-			</div>
-			<div class="menu-item-top-left">
-				<img id="zia" src="img/zia_8.png" alt="">
-			</div>
-			<div class="menu-item-top-left">
-				<img id="tao" src="img/tao_5.png" alt="">
-			</div>
-			<div id="solaris" class="menu-item-top-right">
-				<span class="item"></span>
-				<!-- <img src="img/solaris_3.png" alt=""> -->
-			</div>
-			<div id="thallios" class="menu-item-top-right">
-				<span class="item"></span>
-				<!-- <img src="img/sous-marin.jpg" alt=""> -->
-			</div>
-			<div id="condor" class="menu-item-top-right">
-				<span class="item"></span>
-				<!-- <img src="img/temple-condor.png" alt=""> -->
-			</div>
-			<div id="olmeque" class="menu-item-top-right">
-				<span class="item"></span>
-				<!-- <img src="img/03.jpg" alt=""> -->
-			</div>
+<head>
+	<meta charset="utf-8">
+	<title>Mystérieuses cités d'or</title>
+	<style media="screen">
+	html{background-color: black;}
+	img{display: none;}
+	#loading { position: absolute; top: 50%; left: 50%; width: 100px; height: 100px; margin-top: -50px; margin-left: -50px; display: block;}
+	</style>
+</head>
+<body>
+	<img id="loading" src="img/logo_mco1.png" alt="">
+
+	<div class="help">
+		<img id="help" class="pointer" src="img/picchu_1.png" alt="">
+		<span id="help-text" class="display">Cliquez sur l'image au centre de l'écran pour modifier la vue</span>
+	</div>
+
+	<div class="menu">
+		<div class="menu-item-top-left">
+			<img id="logo" class="pointer" src="img/logo_mco1.png" alt="">
 		</div>
-	<script type="text/javascript" src="bundle.js"></script></body>
+		<div class="menu-item-top-left">
+			<img id="esteban" class="pointer" src="img/esteban_3.png" alt="">
+		</div>
+		<div class="menu-item-top-left">
+			<img id="zia" class="pointer" src="img/zia_8.png" alt="">
+		</div>
+		<div class="menu-item-top-left">
+			<img id="tao" class="pointer" src="img/tao_5.png" alt="">
+		</div>
+		<div id="solaris" class="menu-item-top-right">
+			<span class="item pointer"></span>
+		</div>
+		<div id="thallios" class="menu-item-top-right">
+			<span class="item pointer"></span>
+		</div>
+		<div id="condor" class="menu-item-top-right">
+			<span class="item pointer"></span>
+		</div>
+		<div id="olmeque" class="menu-item-top-right">
+			<span class="item pointer"></span>
+		</div>
+	</div>
+<script type="text/javascript" src="bundle.js"></script></body>
 </html>
