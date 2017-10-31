@@ -20,6 +20,8 @@ document.querySelector("#solaris").onclick = () => { updatePicture('solaris_3.pn
 document.querySelector("#thallios").onclick = () => { updatePicture('sous-marin.jpg'); }
 document.querySelector("#condor").onclick = () => { updatePicture('temple-condor.png'); }
 document.querySelector("#olmeque").onclick = () => { updatePicture('03.jpg'); }
+document.querySelector("#help").onclick = () => { document.querySelector("#help-text").classList.toggle('display'); }
+
 
 const updatePicture = pictureName => {
 	sessionStorage.clear();

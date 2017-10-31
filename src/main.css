@@ -1,5 +1,7 @@
 body { margin: 0; padding: 0; }
-canvas { display: block; }
+canvas { display: block; cursor: move;}
+img { display: block; height: 50px; width: auto; margin: 5px; }
+span { color: white; }
 
 .menu { position: fixed; margin: 1%; width: 98%; }
 .menu-item-top-right { background-color: #f0ce00; border-radius: 5px; display: inline-block; float: right; margin: 5px; padding: 10px; }
@@ -14,13 +16,11 @@ canvas { display: block; }
 #condor .item::before { content: "C"; }
 #condor .item:hover::before { content: "Condor"; }
 
+.display { display: none; }
+.pointer { cursor: pointer; }
 
-img {
-	height: 50px;
-	width: auto;
-	margin: 5px;
-}
+#loading { display: none; }
 
-span {
-	color: white;
-}
+
+#help { position: fixed; bottom: 10px; left: 10px; }
+#help-text { position: fixed; bottom: 20px; left: 80px; width: 100px; background-color: #47ba81; padding: 10px; border-radius: 5px; }
